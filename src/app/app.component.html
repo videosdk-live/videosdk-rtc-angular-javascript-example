@@ -1,0 +1,14 @@
+
+ <button (click)="join()" >Join</button>
+ <button (click)="leave()" >Leave</button>
+<div id="local-participant">
+  <h3>Me: {{ meeting.localParticipant.id }}</h3>
+  <video #localVideo controls autoplay height="180" width="360"></video>
+  <button (click)="enableMic()" >Enable Mic</button>
+  <button (click)="disableMic()" >Disable Mic</button>
+  <button (click)="enableCam()" >Enable Cam</button>
+  <button (click)="disableCam()" >Disable Cam</button>
+</div>
+<h3>Remote Participants</h3>
+<video #remoteVideo controls autoplay  height="180" width="360"></video>
+<audio #remoteAudio controls autoplay></audio>
